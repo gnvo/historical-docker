@@ -5,11 +5,13 @@ RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y build-essential && \
-  apt-get install -y software-properties-common && \
-  apt-get install -y byobu curl git htop man unzip wget  && \
-  apt-get install -y bash-completion less nano net-tools iftop python3 inetutils-ping && \
+  apt-get install -y tmux && \
+  apt-get install -y bash-completion less nano python3 && \
   rm -rf /var/lib/apt/lists/*
+
+# Install ElasticSearch for python
+RUN \
+  pip install --no-cache-dir elasticsearch
 
 # Install filebeats
 RUN \
