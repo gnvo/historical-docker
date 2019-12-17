@@ -13,7 +13,7 @@ RUN \
 
 # Install filebeats
 RUN \
-  wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.5.0-amd64.deb -O /root/filebeat-7.5.0-amd64.deb &&
+  wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.5.0-amd64.deb -O /root/filebeat-7.5.0-amd64.deb && \
   dpkg -i /root/filebeat-7.5.0-amd64.deb
 
 # Set environment variables.
