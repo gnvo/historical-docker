@@ -8,7 +8,7 @@ RUN \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip wget  && \
-  apt-get install -y bash-completion less nano net-tools iftop python3 inetutils-ping &&
+  apt-get install -y bash-completion less nano net-tools iftop python3 inetutils-ping && \
   rm -rf /var/lib/apt/lists/*
 
 # Install filebeats
