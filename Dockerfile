@@ -11,7 +11,7 @@ RUN \
 
 # Install ElasticSearch for python
 RUN \
-  pip install --no-cache-dir elasticsearch
+  pip3 install --no-cache-dir elasticsearch
 
 # Install filebeats
 RUN \
