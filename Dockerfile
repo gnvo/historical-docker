@@ -6,7 +6,7 @@ RUN \
   apt-get update && \
   apt-get -y upgrade && \
   apt-get install -y tmux && \
-  apt-get install -y bash-completion less nano python3 python3-pip && \
+  apt-get install -y wget bash-completion less nano python3 python3-pip && \
   rm -rf /var/lib/apt/lists/*
 
 # Install ElasticSearch for python
